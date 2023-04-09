@@ -1,0 +1,77 @@
+img {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.success-modal {
+    max-width: 816px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 24px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.05);
+    border-radius: 2px;
+    border: 1px solid #f0f0f5;
+}
+
+.success-modal .success-modal-title {
+    height: 24px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular,PingFang SC;
+    font-weight: 400;
+    color: #555666;
+    line-height: 24px;
+}
+
+.success-modal .success-modal-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.success-modal .success-modal-content .content-title {
+    height: 28px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222226;
+    line-height: 28px;
+}
+
+.success-modal .success-modal-content img {
+    height: 150px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.success-modal .success-modal-footer {
+    padding: 0 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.success-modal .success-modal-footer .success-modal-btn {
+    height: 32px;
+    background: #fff;
+    line-height: 32px;
+    max-width: 116px;
+    border-radius: 15px;
+    border: 1px solid #ccccd8;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222226;
+    text-align: center;
+    cursor: pointer;
+}

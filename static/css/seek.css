@@ -1,0 +1,27 @@
+.donate-container {
+    background: #ffffff;
+}
+
+.donate-container {
+    margin: 0;
+    padding: 0;
+}
+
+.donate-content {
+    padding: 38px 0 24px 40px;
+}
+
+.donate-title {
+    margin-bottom: 34px;
+}
+
+.title {
+    font-weight: 1000;
+    color: #222226;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+

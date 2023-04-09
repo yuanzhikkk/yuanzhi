@@ -1,0 +1,371 @@
+a {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    min-width: 100%;
+    width: max-content;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.toolbar * {
+    font-size: 14px;
+    font-family: 'PingFang SC','SF Pro Display','Microsoft YaHei',Roboto,Noto,Arial,sans-serif
+}
+
+.toolbar .container {
+    box-sizing: content-box;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 24px;
+    background: #ffffff;
+    color: #222226;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.toolbar .container .container-left {
+    -webkit-box-flex:0;
+    flex: none;
+    height: 48px;
+}
+
+.toolbar .container .container-left .toolbar-logo {
+    max-width: 80px;
+    position: relative;
+    height: 100%;
+    margin-right: 8px;
+    float: left;
+
+}
+
+.toolbar .container .container-left .toolbar-logo > a {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    width: auto;
+    display: block;
+    height: 100%;
+}
+
+.toolbar .container .container-left .toolbar-logo a > img {
+    height: 44px;
+    float: left;
+    display: block;
+    min-width: 44px;
+    margin-top: calc((48px - 44px) / 2)
+}
+
+.toolbar .container .container-left .toolbar-menu {
+    float: left;
+    height: 100%;
+    font-size: 0;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.toolbar .container .container-left .toolbar-menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    height: 100%;
+    line-height: 48px;
+}
+
+.toolbar .container .container-left .toolbar-menu li > a{
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    color: inherit;
+    padding: 0 10px;
+}
+
+.toolbar .container .container-middle {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 0 40px;
+    min-width: 200px;
+    display: block;
+}
+
+.toolbar .container .container-middle .search-box {
+    width: 100%;
+    max-width: 720px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: calc((48px - 32px)/ 2);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.toolbar .container .container-middle .search-box .toolbar-search-box {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar .container .container-middle .search-box .toolbar-search-box input {
+    font-size: 14px;
+    display: inline-block;
+    width: calc(100% - 104px);
+    line-height: inherit;
+    outline: 0;
+    background: #f5f6f7;
+    padding: 0;
+    color: #fff;
+    vertical-align: top;
+    border: 1px solid #e8e8ed;
+    height: 31px;
+    margin-top: 0.5px;
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 16px 0 0 16px;
+}
+
+.toolbar .container .container-middle .search-box .toolbar-search-box #toolbar-search-button {
+    display: inline-block;
+    width: 88px;
+    height: 100%;
+    outline: 0;
+    border: 0 none;
+    border-radius: 0 16px 16px 0;
+    font-size: 14px;
+    line-height: 32px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    background-color: #409eff;
+    text-align: left;
+}
+
+.toolbar .container .container-middle .search-box .toolbar-search-box #toolbar-search-button i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("/images/white-search.png");
+    background-size: 100%;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-left: 14px;
+}
+
+.toolbar .container .container-middle .search-box .toolbar-search-box #toolbar-search-button span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.toolbar .container .container-right {
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    flex: none;
+}
+
+.toolbar .container .container-right .container-right-btns {
+    height: 100%;
+
+}
+
+.toolbar .container .container-right .container-right-btns .container-right-btn {
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    color: inherit;
+    text-align: center;
+    padding: 0 8px;
+    float: left;
+    display: block;
+}
+
+.toolbar .container .container-right .container-right-btns .container-right-btn .hasAvatar {
+    margin-right: 16px;
+    margin-top: calc((48px - 32px)/ 2);
+    transition: all .2s ease-out;
+    transform-origin: top center;
+}
+
+.toolbar .container .container-right .container-right-btns .container-right-btn a {
+    display: block;
+    color: #222226;
+    line-height: 48px;
+    position: relative;
+}
+
+.toolbar .container .container-right .container-right-btns .container-right-btn a img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+}
+
+
+/** =================================category============================================= */
+.z-home-box {
+    padding-top: 1rem;
+    background: #f4f5f5;
+    min-height: 100vh;
+}
+
+.z-home-box .z-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.z-home-box .z-container .z-main-header {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    color: #909090;
+    height: 5rem;
+    /*z-index: 250;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    transition: top 0.3s linear;
+}
+
+.z-home-box .z-container .z-main-header .z-nav-item {
+    color: #515767;
+    height: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    min-width: 61px;
+}
+
+.z-home-box .z-container .z-main-header .z-main-nav {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.z-home-box .z-container .z-main-header .z-main-nav .z-phone-hide {
+    display: flex; /* border: 1px solid #f00; */ /* width: 100%; */
+    width: 85%;
+    min-width: 40%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.z-home-box .z-container .z-main-header .z-main-nav .z-search-box {
+    display: flex; /* border: 1px solid #f00; */ /* width: 100%; */
+    width: 85%;
+    min-width: 40%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.z-home-box .z-container .z-main-header .z-main-nav .z-search-box .zz-search-top {
+    width: 90%;
+    flex-grow: 1;
+    -webkit-appearance: none;
+    font-size: inherit;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: 0 0;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.z-home-box .z-container .z-main-header .z-main-nav .login-box { /* margin-left: 20px; */
+    display: flex;
+    align-items: center;
+}
+
+
+.z-home-box .z-container .z-main-header .z-main-nav .login-box .zz-login-btn-top {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    height: 32px;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #409eff;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    transition: 0.1s;
+    border: #409eff;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 3px; /* width: 40px; */
+}
+
+.z-home-box .z-container .z-main-header .z-view-nav {
+    margin: 0 auto;
+    width: 100%;
+    height: 3.833rem;
+    max-width: 960px;
+    z-index: 100;
+    background: #fff;
+    transition: top 0.3s linear;
+    border-top: 0.5px solid #e5e6eb; /* border: 1px solid #f00; */
+}
+
+.z-home-box .z-container .z-main-header .z-view-nav .z-view-hide {
+    height: 100%;
+    margin: 0 auto; /* max-width: 960px; */
+    display: flex; /* border: 1px solid #f00; overflow-x: auto; overflow-y: hidden; */
+}
+
+.z-home-box .z-container .z-main-header .z-view-nav .z-view-hide .z-view-item {
+    color: #71777c;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    min-width: 66px;
+}
+
+/*====================footer============================*/
+.z-home-box .zz-fotter {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background: #f4f5f5;
+}
+

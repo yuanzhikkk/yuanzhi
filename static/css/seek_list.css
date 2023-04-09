@@ -1,0 +1,229 @@
+* ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.seek-list-container {
+    background: #ffffff;
+}
+
+.title {
+    height: 48px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+    font-weight: 1000;
+    color: #222226;
+}
+
+.title p {
+    padding-left: 10px;
+    font-size: 18px;
+    padding-top: 11px;
+}
+
+.seek-wrap-container {
+    box-sizing: border-box;
+}
+
+.seek-wrap-container .seek-wrap {
+    height: 48px;
+    background: #ffffff;
+    border-bottom: none;
+    position: relative;
+}
+
+.seek-wrap span {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+    cursor: pointer;
+    color: #777888;
+}
+
+.seek-data-container {
+    -webkit-box-pack: start;
+    background: #ffffff;
+    margin: 0;
+    padding: 16px 0 8px;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: 0 -1px 0 0 #f5f6f7;
+}
+
+.seek-data-container .seek-left {
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    height: 122px;
+    line-height: 122px;
+}
+.seek-data-container .seek-left li {
+    text-align: center;
+    line-height: 122px;
+    height: 122px;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+    display: flex;
+}
+
+.seek-data-container .seek-left li div {
+    height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555666;
+    line-height: 28px;
+}
+
+.seek-data-container .seek-left li p {
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555666;
+    line-height: 20px;
+}
+
+.seek-data-container .seek-right {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.seek-data-container .seek-right .title-box{
+    position: relative;
+    padding: 0 24px 0 16px;
+    min-height: 50px;
+    height: 25px;
+    line-height: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seek-data-container .seek-right .title-box a h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: #222226;
+    margin: 0;
+    word-break: break-all;
+    cursor: pointer;
+    display: inline;
+}
+
+.seek-data-container .seek-right .seek-description{
+    margin-top: 2px;
+    padding: 0 24px 0 16px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    white-space: nowrap;
+    color: #555666;
+}
+
+.seek-data-container .seek-right .seek-header{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #999aaa;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 0 24px 0 16px;
+}
+
+.seek-data-container .seek-right .slug-nav{
+    margin-bottom: 8px;
+    float: left;
+    position: relative;
+    left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    color: #555666;
+    font-weight: 400;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.seek-data-container .seek-right li {
+    margin-bottom: 8px;
+    float: left;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    font-weight: 400;
+    background-color: #ecf5ff;
+    height: 24px;
+    box-sizing: border-box;
+    border-color: #d9ecff;
+    white-space: nowrap;
+    line-height: 19px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.seek-data-container .seek-right li .category {
+    padding: 0;
+    font-size: 12px;
+    color: #409eff;
+    font-weight: 400;
+}
+
+.seek-data-container .seek-right .user-box {
+    margin-bottom: 8px;
+    float: right;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: default;
+}
+
+.seek-data-container .seek-right .user-box .toQuestion {
+    text-align: center;
+    height: 20px;
+    border-radius: 2px;
+    color: #999aaa;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.seek-data-container .seek-right .user-box .user {
+    flex-shrink:0;
+    font-size: 12px;
+    color: #999aaa;
+    line-height: 20px;
+    margin-right: 8px;
+    border-color: #d9ecff;
+    margin-left: 6px;
+}
+
+.zz-no-more {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0 -1px #f5f6f7;
+}
